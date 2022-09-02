@@ -1,13 +1,14 @@
 import React from "react";
-import logo from "../assets/images/logo.svg";
 import mainImage from "../assets/images/main.svg";
 import Wrapper from "../assets/wrappers/LandingPage"
+import { Link } from "react-router-dom"
+import Logo from "../components/Logo";
 
-const Landing = () => {
+function Landing() {
   return (
     <Wrapper>
       <nav>
-        <img src={logo} alt="jobify logo" className="logo" />
+        <Logo />
       </nav>
       <div className="container page">
         <div className="info">
@@ -19,13 +20,13 @@ const Landing = () => {
             keep track of your jobs aplications! Good luck during job hunting
             and happy coding!
           </p>
-          <button className="btn btn-hero">Login/Register</button>
+          <Link to="/register" className="btn btn-hero">Login/Register</Link>
         </div>
         <img src={mainImage} alt="job" className="img main-img" />
       </div>
     </Wrapper>
   );
-};
+}
 
 
 
