@@ -36,5 +36,9 @@ const Wrapper = styled.main`
       display: block;
     }
   }
+
+  .logo{
+    height: 6rem;
+  }
 `
 export default Wrapper
